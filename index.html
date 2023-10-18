@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=deiver-width,initial-scale=1.0">
+        <title>Admin Dashboard</title> 
+
+    <!--Montserrat fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,800;0,900;1,500;1,700;1,800&display=swap" rel="stylesheet">
+       
+     <!--material_icon-->   
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+     rel="stylesheet">
+
+      <!--custom-css-->
+        <link rel="stylesheet" href="styled.css"
+        
+    </head>
+    <body>
+
+
+     <div class="grid-container">
+
+      <!--header-->
+     <header class="header">
+      <div class="menu-container">
+      <span class="material-icons-outlined">menu</span>
+     </div>
+      <div class="header-left">
+      <span class="material-icons-outlined">search</span>
+      </div>      
+        
+      <div class="header-right">
+      <span class="material-icons-outlined">notifications</span>
+      <span class="material-icons-outlined">email</span>
+       <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+
+
+      <!--sidebar-->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                <span class="material-icons-outlined">dashboard</span> Dashboard
+            </div>
+            
+            </div>
+            <ul class="sidebar-list-card">
+                <li class="sidebar-list-items">
+                <span class="material-icons-outlined">inventory_2</span> Products
+                </li>
+
+                <li class="sidebar-list-items">
+                 <span class="material-icons-outlined">inventory
+                 </span>Inventory
+                </li>
+
+                <li class="sidebar-list-items">
+                <span class="material-icons-outlined">shopping_cart
+                    </span> Purchase orders
+                </li>
+
+                <li class="sidebar-list-items">
+                <span class="material-icons-outlined">shopping_cart
+                   </span> Sales Orders
+                 </li>
+                 
+                <li class="sidebar-list-items">
+                <span class="material-icons-outlined">settings
+                </span>Settings
+                 </li>
+
+                 <li class="sidebar-list-items">
+                 <span class="material-icons-outlined">help_outline
+                </span>Help
+                </li>
+
+            </ul>
+
+        </aside>
+
+     <!--main-container-->
+        <main class="main-container">
+           <div class="main-heading">
+            <p class="content">
+            Hello Vikram
+            <span class="material-icons-outlined">waving_hand</span>
+            </p>
+          </div>
+
+          <div class="main-card-container">
+            <div class="card">
+                <div class="card-inner">
+                <h1 class="content">PRODUCTS</h1>
+                <span class="material-icons-outlined text-color1" >inventory_2</span>
+            </div>
+            <p class="content font-weight-bold">300</p>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                <h1 class="content">PURCHASE ORDERS</h1>
+                <span class="material-icons-outlined text-color2">shopping_cart
+            </div>
+            <p class="content font-weight-bold">80</p>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                <h1 class="content">SALES ORDERS </h1>
+                <span class="material-icons-outlined text-color3">shopping_cart
+            </div>
+            <p class="content font-weight-bold">78</p>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                <h1 class="content">INVENTORY ALERTS</h1>
+                <span class="material-icons-outlined text-color4">notifications_active</span>
+            </div>
+            <p class="content font-weight-bold">60</p>
+            </div>
+
+          </div>
+
+          <div class="charts">
+            <div class="charts-card">
+                <h1 class="charts-title">Top 5 Propducts</h1>
+                <div id="bar-charts"></div>
+            </div>
+
+            <div class="charts-card">
+                <h1 class="charts-title">Purchase and Sales Orders</h1>
+                <div id="area-charts"></div>
+            </div>
+
+            
+          </div>
+
+        </main>
+
+
+       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.44.0/apexcharts.min.js" ></script>
+        <script src="javascript.js"></script>
+    </body>
+</html>
